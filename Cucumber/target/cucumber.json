@@ -1,0 +1,137 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1828157800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Techfios login page",
+            "match": {
+              "location": "LoginStepDefeinition.user_is_on_Techfios_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3619861100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefeinition.before()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "User should be able to login with valid credentials",
+        "description": "",
+        "id": "techfios-other-login-functionality-validation-using-data-from-sql;user-should-be-able-to-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 820054800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefeinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4503218900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters \"username\" from mysqldatabase",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginStepDefeinition.user_enters_from_mysqldatabase(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3202060200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters \"password\" from mysqldatabase",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginStepDefeinition.user_enters_from_mysqldatabase(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2152103800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on Signin button",
+            "match": {
+              "location": "LoginStepDefeinition.user_clicks_on_Signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1101921299,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should land on Dashboard page",
+            "match": {
+              "location": "LoginStepDefeinition.user_should_land_on_Dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@DbScenario1"
+          }
+        ]
+      }
+    ],
+    "name": "Techfios Other login functionality validation using data from sql",
+    "description": "",
+    "id": "techfios-other-login-functionality-validation-using-data-from-sql",
+    "keyword": "Feature",
+    "uri": "features/LoginFromSql.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Dblogin"
+      }
+    ]
+  }
+]
